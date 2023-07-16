@@ -19,8 +19,15 @@ function App() {
   };
 
   const onError: SubmitErrorHandler<MyForm> = (data) => {
+    console.log("boroda");
     console.log(data);
   };
+
+  const helloWorld = () => {
+    console.log("hello world");
+  };
+
+  helloWorld();
 
   return (
     <form onSubmit={(e) => void handleSubmit(onSubmit, onError)(e)}>
