@@ -15,11 +15,11 @@ function App() {
   });
 
   const onSubmit: SubmitHandler<MyForm> = (data) => {
-    console.log(data);
+    console.log("data", data);
   };
 
   const onError: SubmitErrorHandler<MyForm> = (data) => {
-    console.log(data);
+    console.log({ data }, "bebra");
   };
 
   return (
